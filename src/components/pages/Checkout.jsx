@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "@/components/atoms/Button";
-import Input from "@/components/atoms/Input";
-import ApperIcon from "@/components/ApperIcon";
 import { useCart } from "@/hooks/useCart";
-import { orderService } from "@/services/api/orderService";
 import { toast } from "react-toastify";
-
+import ApperIcon from "@/components/ApperIcon";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
+import { orderService } from "@/services/api/orderService";
 const Checkout = () => {
   const navigate = useNavigate();
   const { cartItems, clearCart } = useCart();
@@ -234,6 +233,26 @@ const Checkout = () => {
                     </div>
                   </div>
                 </label>
+              </div>
+</div>
+            </div>
+
+            {/* Terms of Service */}
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <ApperIcon name="AlertCircle" className="w-5 h-5 text-amber-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    Terms & Conditions
+                  </h3>
+                  <div className="text-sm text-gray-600 space-y-2 leading-relaxed">
+                    <p>
+                      By placing an order, you agree to our terms of service. Prices are subject to change without notice. We reserve the right to cancel any order due to stock issues or technical errors.
+                    </p>
+                  </div>
+</div>
               </div>
             </div>
 

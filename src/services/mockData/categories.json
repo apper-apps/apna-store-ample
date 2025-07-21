@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "name": "Grocery",
+    "icon": "ShoppingBasket",
+    "displayOrder": 1
+  },
+  {
+    "Id": 2,
+    "name": "Electronics",
+    "icon": "Smartphone",
+    "displayOrder": 2
+  },
+  {
+    "Id": 3,
+    "name": "Fashion",
+    "icon": "Shirt",
+    "displayOrder": 3
+  },
+  {
+    "Id": 4,
+    "name": "Home & Garden",
+    "icon": "Home",
+    "displayOrder": 4
+  },
+  {
+    "Id": 5,
+    "name": "Health & Beauty",
+    "icon": "Heart",
+    "displayOrder": 5
+  },
+  {
+    "Id": 6,
+    "name": "Sports",
+    "icon": "Dumbbell",
+    "displayOrder": 6
+  },
+  {
+    "Id": 7,
+    "name": "Books",
+    "icon": "Book",
+    "displayOrder": 7
+  },
+  {
+    "Id": 8,
+    "name": "Toys",
+    "icon": "Gamepad2",
+    "displayOrder": 8
+  },
+  {
+    "Id": 9,
+    "name": "Automotive",
+    "icon": "Car",
+    "displayOrder": 9
+  },
+  {
+    "Id": 10,
+    "name": "Jewelry",
+    "icon": "Gem",
+    "displayOrder": 10
+  }
+]

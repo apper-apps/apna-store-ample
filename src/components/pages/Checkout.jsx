@@ -231,10 +231,9 @@ const Checkout = () => {
                       <div className="font-semibold text-gray-600">Online Payment</div>
                       <div className="text-sm text-gray-500">UPI, Cards, Net Banking (Coming Soon)</div>
                     </div>
-                  </div>
+</div>
                 </label>
               </div>
-</div>
             </div>
 
             {/* Terms of Service */}
@@ -250,9 +249,9 @@ const Checkout = () => {
                   <div className="text-sm text-gray-600 space-y-2 leading-relaxed">
                     <p>
                       By placing an order, you agree to our terms of service. Prices are subject to change without notice. We reserve the right to cancel any order due to stock issues or technical errors.
-                    </p>
+</p>
                   </div>
-</div>
+                </div>
               </div>
             </div>
 

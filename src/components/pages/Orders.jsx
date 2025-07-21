@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
-import Badge from "@/components/atoms/Badge";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
-import { orderService } from "@/services/api/orderService";
+import React, { useEffect, useState } from "react";
 import { format } from "date-fns";
+import ApperIcon from "@/components/ApperIcon";
+import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
+import Badge from "@/components/atoms/Badge";
+import Button from "@/components/atoms/Button";
+import { orderService } from "@/services/api/orderService";
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
@@ -108,9 +108,49 @@ const Orders = () => {
             ))}
           </div>
         </div>
+</div>
       </div>
 
-      {/* Orders List */}
+      {/* Delivery Information */}
+      <div className="bg-white rounded-xl p-6 shadow-sm">
+        <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          <ApperIcon name="Truck" className="w-6 h-6 text-primary-600" />
+          Delivery Information
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="text-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-3">
+              <ApperIcon name="Package" className="w-6 h-6 text-primary-600" />
+            </div>
+            <h3 className="font-semibold text-gray-900 mb-1 text-sm">Dispatch Time</h3>
+            <p className="text-gray-600 text-xs">1–3 business days</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-3">
+              <ApperIcon name="Clock" className="w-6 h-6 text-blue-600" />
+            </div>
+            <h3 className="font-semibold text-gray-900 mb-1 text-sm">Delivery Time</h3>
+            <p className="text-gray-600 text-xs">3–7 days depending on location</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mx-auto mb-3">
+              <ApperIcon name="Truck" className="w-6 h-6 text-green-600" />
+            </div>
+            <h3 className="font-semibold text-gray-900 mb-1 text-sm">Free Delivery</h3>
+            <p className="text-gray-600 text-xs">On orders above ₹499</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-3">
+              <ApperIcon name="MessageSquare" className="w-6 h-6 text-purple-600" />
+            </div>
+            <h3 className="font-semibold text-gray-900 mb-1 text-sm">Tracking Updates</h3>
+            <p className="text-gray-600 text-xs">Via WhatsApp/email after dispatch</p>
+          </div>
+        </div>
+      </div>
       <div className="space-y-4">
         {filteredOrders.map((order) => (
           <div key={order.Id} className="bg-white rounded-xl p-6 shadow-sm">

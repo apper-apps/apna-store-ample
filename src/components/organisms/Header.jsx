@@ -173,8 +173,63 @@ return (
               placeholder="Search products..."
               onSearch={handleSearch}
             />
-          </div>
+</div>
         )}
+      </div>
+      
+      {/* Footer Links Bar */}
+      <div className="bg-gradient-to-r from-primary-600 to-accent-600 text-white py-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm">
+            <a 
+              href="/contact" 
+              className="flex items-center gap-1 hover:text-white/80 transition-colors"
+            >
+              <span>📞</span>
+              <span>Contact Us</span>
+            </a>
+            
+            <span className="hidden md:inline text-white/60">|</span>
+            
+            <a 
+              href="/return-policy" 
+              className="flex items-center gap-1 hover:text-white/80 transition-colors"
+            >
+              <span>📦</span>
+              <span>Return Policy</span>
+            </a>
+            
+            <span className="hidden md:inline text-white/60">|</span>
+            
+            <a 
+              href="/shipping-policy" 
+              className="flex items-center gap-1 hover:text-white/80 transition-colors"
+            >
+              <span>🚚</span>
+              <span>Shipping Policy</span>
+            </a>
+            
+            <span className="hidden md:inline text-white/60">|</span>
+            
+            <a 
+              href="/terms-conditions" 
+              className="flex items-center gap-1 hover:text-white/80 transition-colors"
+            >
+              <span>⚖️</span>
+              <span>Terms & Conditions</span>
+            </a>
+            
+            <span className="hidden md:inline text-white/60">|</span>
+            
+            <a 
+              href="/privacy-policy" 
+              className="flex items-center gap-1 hover:text-white/80 transition-colors"
+            >
+              <span>🔒</span>
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );

@@ -104,14 +104,12 @@ const Orders = () => {
                 onClick={() => setFilter(status)}
               >
                 {status === "all" ? "All" : status.charAt(0).toUpperCase() + status.slice(1)}
+{status === "all" ? "All" : status.charAt(0).toUpperCase() + status.slice(1)}
               </Button>
             ))}
           </div>
         </div>
-</div>
       </div>
-
-      {/* Delivery Information */}
       <div className="bg-white rounded-xl p-6 shadow-sm">
         <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
           <ApperIcon name="Truck" className="w-6 h-6 text-primary-600" />
